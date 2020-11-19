@@ -8,7 +8,7 @@
   - chmod +x instaladorOCSagentUNIX.sh
   
   - 2. Descargar tar.gz
-  - wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.xz
+  - wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.gz
   
 
 <p align="center">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
