@@ -1,4 +1,5 @@
 #!/bin/bash
+
 function comprobacionesIniciales() {
 	if ! isRoot; then
 		echo "El script tiene que ser ejecutado como root"
