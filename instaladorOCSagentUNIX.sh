@@ -31,7 +31,8 @@ function instalarDEBIAN() {
 }
 
 function ejecucionINSTALL() {
-  tar –xvzf UnixAgent-master.tar.xz
+  wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.gz
+  tar –xvzf UnixAgent-master.tar.gz
   cd UnixAgent-master
   env PERL_AUTOINSTALL=1 perl Makefile.PL
   make
