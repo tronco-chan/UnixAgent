@@ -16,10 +16,10 @@ function isRoot() {
 }
 
 function seleccionarOS() {
-  echo -e "\e[92mQue sistema operativo estás usando??"
+  echo "Que sistema operativo estás usando??"
 	echo " 1. Fedora / Redhat / Centos7 y similares"
 	echo " 2. Debian Stretch / Ubuntu"
-  echo -e "\e[33m 3. Ninguno, quiero salir de aqui"
+  echo " 3. Ninguno, quiero salir de aqui"
   if [[ CONTINUAR  -eq 1 ]]; then
   		instalarCENTOS
   	elif [[ CONTINUAR -eq 2 ]]; then
