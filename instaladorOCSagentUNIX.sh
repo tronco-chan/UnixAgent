@@ -43,6 +43,7 @@ function seleccionarOS() {
 	echo " 1. Fedora / Redhat / Centos7 y similares"
 	echo " 2. Debian Stretch / Ubuntu"
   echo " 3. Ninguno, quiero salir de aqui"
+  read -e CONTINUAR
   if [[ CONTINUAR  -eq 1 ]]; then
   		instalarCENTOS
   elif [[ CONTINUAR -eq 2 ]]; then
