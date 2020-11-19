@@ -1,13 +1,14 @@
 <p align="center">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
 <p align="center">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
 <p align="center">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
-
-  1. Descargar script instalacion:
-  wget https://github.com/tronco-chan/UnixAgent/blob/master/instaladorOCSagentUNIX.sh
-  chmod +x instaladorOCSagentUNIX.sh
+  #### Instrucciones:
   
-  2. Descargar tar.gz
-  wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.xz
+  - 1. Descargar script instalacion:
+  - wget https://github.com/tronco-chan/UnixAgent/blob/master/instaladorOCSagentUNIX.sh
+  - chmod +x instaladorOCSagentUNIX.sh
+  
+  - 2. Descargar tar.gz
+  - wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.xz
   
 
 <p align="center">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
