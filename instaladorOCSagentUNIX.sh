@@ -26,17 +26,19 @@ function instalarCENTOS() {
 }
 
 function instalarDEBIAN() {
+  apt install make
+  apt install libxml-simple-perl
   apt install libcrypt-ssleay-perl libnet-snmp-perl libproc-pid-file-perl libproc-daemon-perl net-tools libsys-syslog-perl pciutils smartmontools read-edid nmap libnet-netmask-perl
   ejecucionINSTALL
 }
 
 function ejecucionINSTALL() {
-  wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.gz
-  tar –xvzf UnixAgent-master.tar.gz
+  #wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.gz
+  tar -xvzf UnixAgent-master.tar.gz
   cd UnixAgent-master
-  env PERL_AUTOINSTALL=1 perl Makefile.PL
-  make
-  make install
+  env PERL_AUTOINSTALL=1 perl Makefile.PL && make && make install && perl postinstl.pl --nowizard --server=https://ocsng.altia.es/ocsinventory --crontab --nossl
+  #make
+  #make install
 }
 
 function seleccionarOS() {
