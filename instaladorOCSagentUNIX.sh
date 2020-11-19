@@ -35,7 +35,7 @@ function ejecucionINSTALL() {
   #wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.gz
   tar -xvzf UnixAgent-master.tar.gz
   cd UnixAgent-master
-  sudo env PERL_AUTOINSTALL=1 perl Makefile.PL && make && make install && perl postinst.pl --nowizard --server=https://ocsng.altia.es/ocsreports/ --crontab --nossl
+  sudo env PERL_AUTOINSTALL=1 perl Makefile.PL && make && make install && perl postinst.pl --nowizard --server=ocsng.altia.es --crontab --nossl
   #make
   #make install
 }
