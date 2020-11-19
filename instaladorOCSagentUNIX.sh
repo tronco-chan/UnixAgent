@@ -15,21 +15,6 @@ function isRoot() {
 	seleccionarOS
 }
 
-function seleccionarOS() {
-  echo "Que sistema operativo estás usando??"
-	echo " 1. Fedora / Redhat / Centos7 y similares"
-	echo " 2. Debian Stretch / Ubuntu"
-  echo " 3. Ninguno, quiero salir de aqui"
-  if [[ CONTINUAR  -eq 1 ]]; then
-  		instalarCENTOS
-  	elif [[ CONTINUAR -eq 2 ]]; then
-  		instalarDEBIAN
-  	elif [[ CONTINUAR -eq 3 ]]; then
-  		echo "Hasta la próxima!"
-  		exit 1
-    fi
-}
-
 function instalarCENTOS() {
   #añadimos repositorio
   su -c 'rpm -Uvh https://download.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm'
@@ -51,6 +36,21 @@ function ejecucionINSTALL() {
   env PERL_AUTOINSTALL=1 perl Makefile.PL
   make
   make install
+}
+
+function seleccionarOS() {
+  echo "Que sistema operativo estás usando??"
+	echo " 1. Fedora / Redhat / Centos7 y similares"
+	echo " 2. Debian Stretch / Ubuntu"
+  echo " 3. Ninguno, quiero salir de aqui"
+  if [[ CONTINUAR  -eq 1 ]]; then
+  		instalarCENTOS
+  elif [[ CONTINUAR -eq 2 ]]; then
+  		instalarDEBIAN
+  elif [[ CONTINUAR -eq 3 ]]; then
+  		echo "Hasta la próxima!"
+  		exit 1
+  fi
 }
 
 comprobacionesIniciales
