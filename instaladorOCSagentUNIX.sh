@@ -26,16 +26,18 @@ function instalarCENTOS() {
 }
 
 function instalarDEBIAN() {
+  mkdir /var/log/ocsinventoryagent-logsfolder/
+  touch /var/log/ocsinventoryagent-logsfolder/ocsagent.log
   apt install -y libcrypt-ssleay-perl libnet-ssleay-perl libnet-ip-perl libnet-netmask-perl libproc-daemon-perl libdata-uuid-perl libxml-simple-perl make nmap
   apt install -y libcrypt-ssleay-perl libnet-snmp-perl libproc-pid-file-perl libproc-daemon-perl net-tools libsys-syslog-perl pciutils smartmontools read-edid nmap libnet-netmask-perl
   ejecucionINSTALL
 }
 
 function ejecucionINSTALL() {
-  #wget https://github.com/tronco-chan/UnixAgent/blob/master/UnixAgent-master.tar.gz
-  tar -xvzf UnixAgent-master.tar.gz
-  cd UnixAgent-master
-  sudo env PERL_AUTOINSTALL=1 perl Makefile.PL && make && make install && perl postinst.pl --nowizard --server=ocsng.altia.es --crontab --nossl
+  wget https://github.com/tronco-chan/UnixAgent/archive/v2.8.0.tar.gz
+  tar -xvzf v2.8.0.tar.gz
+  cd UnixAgent-2.8.0
+  sudo env PERL_AUTOINSTALL=1 perl Makefile.PL && make && make install && perl postinst.pl --nowizard --server=https://ocsng.altia.es --nossl --logfile=/var/log/ocsinventoryagent-logsfolder/ocsagent.log --crontab --now
   #make
   #make install
 }
